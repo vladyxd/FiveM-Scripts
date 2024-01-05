@@ -1,5 +1,5 @@
 ## Project 1: _Better Vehicle Control_
-Description: A made-by-me Vehicle Control UI inspired by [Car control menu v3](https://fivemscript.store/collections/all/products/car-control-menu-v3).
+Description: A made-by-me Vehicle Control UI
 
 ### Features
 - Cool Looking design
