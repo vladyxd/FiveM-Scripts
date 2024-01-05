@@ -1,0 +1,176 @@
+/* FILEPATH: /c:/Users/VLADY/Desktop/customScripts/vehicleControl/vc/src/MusicPlayer.css */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #cacaca;
+  border-radius: 40%;
+}
+.music-player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* move it to top of it's parent*/
+    margin-bottom: auto;
+}
+.song-list{
+    /* move them to left*/
+    margin-right: auto;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 320px;
+    overflow-y: auto;
+    /* hide scrollbar but keep it*/
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+    
+}
+/* MusicPlayer.css */
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px; /* Add margin between song info and duration */
+    padding-left: 8px; /* Add padding to the left of the song info */
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-name {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20%;
+    margin-bottom: 4px; /* Add margin between name and artist */
+}
+
+.artist {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+
+.album {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.duration {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+.songImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-right: 8px;
+}
+.player{
+    position: absolute;
+    bottom: 0;
+    width: 1020px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+.player-info-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-right: 8px;
+}
+/* MusicPlayer.css */
+
+/* ... existing styles ... */
+
+.player-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+
+.player-info-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 20%;
+    margin-right: 8px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    padding-left: 8px;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-name {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20%;
+    margin-bottom: 4px;
+}
+
+.artist {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+
+.album {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.duration {
+    color: #a0a0a0;
+    font-size: 14px;
+}

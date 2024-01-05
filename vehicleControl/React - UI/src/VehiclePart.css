@@ -1,0 +1,20 @@
+.icon{
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.veh-part{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.veh-part.open{
+    background-color: rgba(3, 165, 252, 0.397);
+
+}

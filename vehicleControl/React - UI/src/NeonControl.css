@@ -1,0 +1,149 @@
+:root{
+    --neon-color: #49ffcc;
+}
+.neon {
+    width: 150px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.neon.active{
+    background: var(--neon-color);
+
+}
+.neon.inactive{
+    background: #63636340;
+
+}
+.neon.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 5px var(--neon-color, #00ff00),
+                0 0 20px 10px var(--neon-color, #00ff00),
+                0 0 30px 15px var(--neon-color, #00ff00);
+    opacity: 0;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        opacity: 1;
+    }
+}
+.right{
+    left: 480px;
+    top: -230px;
+}
+.left{
+    left: 480px;
+    top:  -10px;
+}
+.front{
+    top: -140px;
+    left: 200px;
+    transform: rotate(90deg);
+}
+.back{
+    top: -140px;
+    left: 710px;
+    transform: rotate(90deg);
+}
+.right.active {
+    box-shadow: var(--neon-color) 0px 10px -10px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        box-shadow: var(--neon-color) 0px -20px 20px;
+    }
+}
+.left.active {
+    box-shadow: var(--neon-color) 0px 10px 10px;
+    animation: glow-left 1s infinite alternate;
+}
+
+@keyframes glow-left {
+    to {
+        box-shadow: var(--neon-color) 0px 20px 20px;
+    }
+}
+.front.active {
+    box-shadow: var(--neon-color) 0px 10px 10px;
+    animation: glow-front 1s infinite alternate;
+}
+@keyframes glow-front {
+    to {
+        box-shadow: var(--neon-color) 0px 20px 20px;
+    }
+}
+.back.active {
+    box-shadow: var(--neon-color) 0px 0px 5px;
+    animation: glow-back 1s infinite alternate;
+}
+
+@keyframes glow-back {
+    to {
+        box-shadow: var(--neon-color) 0px 0px 20px 0px;
+    }
+}
+
+.color-picker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+}
+
+
+
+
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  bottom: 12px;
+  left: 70%;
+  right: 50%;
+  flex-shrink: 0;
+  width: 300px;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 30px;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
