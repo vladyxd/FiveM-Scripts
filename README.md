@@ -5,7 +5,7 @@ Welcome to my collection of FiveM projects! Below you'll find a brief overview o
 ## Project 1: _Better Vehicle Control_
 Description: A made-by-me Vehicle Control UI
 
-## Project 2: _FitBit app & Phisical Activity Monitor [QB]
+## Project 2: _FitBit app & Phisical Activity Monitor [QB]_
 Description: As the tile says.
 
 ## Contact
