@@ -15,7 +15,7 @@ Then you came to the right place.
 ******
 
 # Installation Steps - For Newbies 
-### If you are not sure wether you can do it yourself or not, just download the resources in the release tab. But it is essential to do steps 1, 2, 3 and 4 from below.
+### If you are not sure wether you can do it yourself or not, just download the resources in the release tab. But it is essential to do steps 1, 2, 3 and 4 from below. [Click here](https://github.com/vladyxd/FiveM-Scripts/releases/tag/qbfitbit)
 
 # Instalation Steps - For advanced
 1. Before we begin, we must add the `runDistance` to the metadata. To do this we head to `qb-core/server/player.lua`, CTRL+F to search, look for `PlayerData.metadata` and where you see things that look familiar to you, example `PlayerData.metadata['thirst'] = PlayerData.metadata['thirst'] or 100`, then we know we are in the right place. Add a new entry, like this:
