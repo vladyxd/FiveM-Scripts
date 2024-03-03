@@ -8,7 +8,6 @@ qbFitbit = {}
 $(document).ready(function () {
     window.addEventListener('message', function (event) {
         if (event.data.action === 'openWatch') {
-            console.log(event.data.steps)
             qbFitbit.Open();
             steps = Math.floor(event.data.steps);
         }
@@ -36,6 +35,7 @@ qbFitbit.Close = function () {
 function requestSteps() {
     steps = $.post('https://qb-fitbit/requestSteps', JSON.stringify({}), function (d) {
         let data = Math.floor(d);
+        console.log(data)
         $('#stepsdata').text(data);
         return data;
     });
@@ -50,8 +50,7 @@ $(document).on('click', '.fitbit-app', function (e) {
     openedApp = pressedApp;
     if (pressedApp === 'steps') {
 
-        $('#stepsdata').text(steps);
-       checkIntervals.push(setInterval(requestSteps, 500));
+        checkIntervals.push(setInterval(requestSteps, 500));
     }
     else {
         checkIntervals.forEach(clearInterval);
