@@ -1,7 +1,7 @@
 
 # QBCore - Monitor Player Phisical Activity and FitBit App
 
-### This is V2. For V1 please go to [main](https://github.com/vladyxd/FiveM-Scripts)
+### This is V2. For V1 please go to [main](https://github.com/vladyxd/FiveM-Scripts/tree/main/QB-FitBit%20Steps)
 
 
 ### Okay, so you are here because you want V2. Hopefully you already know how to install it, from V1. V2 is just a new version that comes with some improvements
@@ -14,8 +14,10 @@
 ## Changes apply to the following files:
 - `qb-fitbit/client/main.lua`
 - `qb-fitbit/html/app.js`
+- `qb-fitbit/html/index.html`
 - `qb-smallresources/client/running.lua` (From previous version)
 - `qb-smallresources/server/main.lua`
+
 
 
 ******
@@ -63,7 +65,18 @@ RegisterNetEvent('running:ResetSteps', function()
 end)
 
 ```
-
+5. Changes in `qb-fitbit/html/index.html` - Add:
+```html
+<div class="app-button reset-steps-settings">
+                        <p>Reset</p>
+                    </div>
+```
+right below
+```html
+ <div class="app-button back-steps-settings">
+                        <p>Back</p>
+                    </div>
+```
 And you should be done.
 
 
