@@ -14,8 +14,10 @@
 ## Changes apply to the following files:
 - `qb-fitbit/client/main.lua`
 - `qb-fitbit/html/app.js`
+- `qb-fitbit/html/index.html`
 - `qb-smallresources/client/running.lua` (From previous version)
 - `qb-smallresources/server/main.lua`
+
 
 
 ******
@@ -63,7 +65,18 @@ RegisterNetEvent('running:ResetSteps', function()
 end)
 
 ```
-
+5. Changes in `qb-fitbit/html/index.html` - Add:
+```html
+<div class="app-button reset-steps-settings">
+                        <p>Reset</p>
+                    </div>
+```
+right below
+```html
+ <div class="app-button back-steps-settings">
+                        <p>Back</p>
+                    </div>
+```
 And you should be done.
 
 
