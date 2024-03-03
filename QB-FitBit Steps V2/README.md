@@ -1,7 +1,7 @@
 
 # QBCore - Monitor Player Phisical Activity and FitBit App
 
-### This is V2. For V1 please go to [main](https://github.com/vladyxd/FiveM-Scripts)
+### This is V2. For V1 please go to [main](https://github.com/vladyxd/FiveM-Scripts/tree/main/QB-FitBit%20Steps)
 
 
 ### Okay, so you are here because you want V2. Hopefully you already know how to install it, from V1. V2 is just a new version that comes with some improvements
